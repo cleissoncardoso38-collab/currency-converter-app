@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #cbcbcb;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding: 20px;
+gap: 20px;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.3);    
+}
+
+header h1 {
+    font-size: 25px;
+    width: 200px;
+    font-weight: 900;
+}
+
+main {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    width: 375px;
+    border: 1px solid #2e2e2e;
+    border-radius: 20px;
+    background: #e9e9e9;
+
+}
+
+.content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+    
+}
+
+.content label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #777777;
+    line-height: 18px;    
+}
+.content select, input{
+    width: 100%;
+    min-width: 340px;
+    height: 48px;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    padding: 10px;  
+    cursor: pointer;
+    appearance: none;
+
+}
+
+.content button {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: white;
+    height: 48px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #2e2e2e;
+    border: none;    
+    margin-top: 10px;
+    box-shadow: 4px 0 10px rgba(0,0,0,0.3);
+    transition: transform 0.5s ease-in-out;
+}
+
+.content button:hover {
+    transform: translateY(5px);
+    opacity: 0.9;
+}
+.content button:active {
+    opacity: 0.6;
+}
+
+.convert-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    border: 1px solid #2e2e2e;
+    width: 100%;
+    border-radius: 10px;
+}
+.convert-area .currency-to-convert, .currency-converted {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #777777;
+}
+.convert-area .value-to-convert, .converted-value{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #555555;
+}
+.convert-area .logo-coin, .logo-coin1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+    
+}
+
+.convert-area .arrow-down {
+    width: 50px;
+    height: 80px;    
+}
+footer{
+    margin-top: 10px;
+}

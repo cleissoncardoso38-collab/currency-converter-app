@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>New Convert Currency</title>
+</head>
+<body>
+    <header>        
+        <img src="./assets/converterlogo2.jpg.webp" alt="converter-logo">
+        <h1>Converter Currency</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <label>Converter <b>de:</b></label>
+                <select name="value" onchange="changeCoin1()" class="select-currency-to-convert">
+                    <option value="null">Selecione</option>
+                    <option value="real">R$ Real Brasileiro</option>
+                    <option value="euro">€ Euro </option>
+                </select>
+            
+            <label>Converter <b>para:</b></label>
+                <select name="value" onchange="changeCoin()" class="select-currency">
+                    <option value="null">Selecione</option>
+                    <option value="dolar">US$ Dólar americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="real">€ Real Brasileiro</option>
+                </select>
+            
+            <label>Valor</label>
+                <input placeholder="R$" class="input-value">
+            
+            <button onclick="converter()" class="converter-button">Converter</button>
+        </div>
+        <div class="convert-area">
+            <img src="./assets/generated.jpg" alt="logo-brazil" class="logo-coin1">
+            <p class="currency-to-convert">Generate</p>
+            <p class="value-to-convert">R$</p>
+            <img src="./assets/arrowdown.png" alt="down-arrow" class="arrow-down">
+            <img src="./assets/generated.jpg" alt="usa-logo" class="logo-coin">
+            <p class="currency-converted">Generate</p>
+            <p class="converted-value">US$</p>
+        </div>
+    </main>
+    <footer>
+        © Cleisson Cardoso - All rights reserved 
+    </footer>
+    
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
